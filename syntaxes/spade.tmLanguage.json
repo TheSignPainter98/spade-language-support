@@ -6,26 +6,72 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#operators"
+		},
+		{
 			"include": "#strings"
+		},
+		{
+			"include": "#numeric"
+		},
+		{
+			"include": "#types"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.spade",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.spade",
+					"match": "\\b(aa\\:|if|else|while|repeat|case|for|in|return)\\b"
+				},
+				{
+					"name": "keyword.control.spade",
+					"match": "\\b\\|>\\b"
+				},
+				{
+					"name": "keyword.control.spade",
+					"match": "\\b/[a-z]+\\b",
+					"comment": "Doesn't work"
+				},
+				{
+					"name": "keyword.control.spade",
+					"match": "\\$"
+				},
+				{
+					"name": "keyword.control.spade",
+					"match": "\\b;\\b"
+				}
+			]
+		},
+		"operators": {
+			"name": "keyword.control.spade",
+			"match": "\\b(\\.\\.\\.|\\.\\.|\\.)\\b",
+			"comment": "keyword.operator.spade",
+			"comment": "\\b(\\.\\.\\.|\\.\\.|\\.|<-|><|=|,|/|//|+|-|%|*|&|\\||!=|/\\\\|\\\\/|<=|>=|==|!)\\b"
+		},
+		"types": {
+			"name": "support.type.spade",
+			"match": "\\b[A-Z][A-Za-z0-9]*\\b"
 		},
 		"strings": {
-			"name": "string.quoted.double.spade",
-			"begin": "\"",
-			"end": "\"",
+			"name": "string.quoted.single.spade",
+			"begin": "'",
+			"end": "'",
 			"patterns": [
 				{
 					"name": "constant.character.escape.spade",
+					"match": "\\\\[bnrt0]"
+				},
+				{
+					"name": "invalid.illegal.spade",
 					"match": "\\\\."
 				}
 			]
+		},
+		"numeric": {
+			"name": "constant.numeric.spade",
+			"match": "\\b\\d+(\\.\\d+)?\\b"
 		}
 	},
 	"scopeName": "source.spade"
