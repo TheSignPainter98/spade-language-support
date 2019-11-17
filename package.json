@@ -2,7 +2,7 @@
     "name": "spade-language-support",
     "displayName": "Spade Language Support",
     "description": "Syntax highlighting for Spade",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.40.0"
     },
@@ -10,16 +10,25 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "spade",
-            "aliases": ["Spade", "spade"],
-            "extensions": [".sp"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "spade",
-            "scopeName": "source.spade",
-            "path": "./syntaxes/spade.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "spade",
+                "aliases": [
+                    "Spade",
+                    "spade"
+                ],
+                "extensions": [
+                    ".sp"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "spade",
+                "scopeName": "source.spade",
+                "path": "./syntaxes/spade.tmLanguage.json"
+            }
+        ]
     }
 }
