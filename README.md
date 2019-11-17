@@ -1,5 +1,7 @@
-# Spade Language Support README
+# Spade Language Support
 
+Provides syntax highlighting for spade and presumably at some point some actual README content.
+<!-- 
 This is the README for your extension "spade-language-support". After writing up a brief description, we recommend including the following sections.
 
 ## Features
@@ -50,4 +52,4 @@ See `CHANGELOG.md`.
 * [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy!**
+**Enjoy!** -->
