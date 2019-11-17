@@ -2,7 +2,7 @@
 	"name": "spade-language-support",
 	"displayName": "Spade Language Support",
 	"description": "Syntax highlighting for Spade",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
